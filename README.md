@@ -79,5 +79,7 @@ python -m torch.distributed.launch --nproc_per_node 8 run.py \
 ```
 For fine-tuning on MS MARCO passage ranking task with self-teaching method, please refer to our [CharacterBERT-DR repo](https://github.com/ielab/CharacterBERT-DR).
 
-## Checkpoints
-We made our ToRoDer model that per-training and fine-tuned (full multi-stage fine-tuning with self-teaching) on MS MARCO publicly at [HuggingFace Model Hub](https://huggingface.co/ielabgroup/ToRoDer-msmarco).
+## Huggingface Checkpoints
+[ielabgroup/ToRoDer](https://huggingface.co/ielabgroup/ToRoDer): Pre-trained only backbone model (Typos-aware Bottlenecked Pretrained on MS MARCO). 
+
+[ielabgroup/ToRoDer-msmarco](https://huggingface.co/ielabgroup/ToRoDer-msmarco): Per-trained and fine-tuned (full multi-stage fine-tuning with self-teaching) on MS MARCO
